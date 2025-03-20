@@ -1,7 +1,13 @@
 import { useContext, useReducer } from "react";
 import { createContext } from "react";
 
-const initialState = { balance: 0, userName: "", nationalID: "" };
+const initialState = {
+  balance: 0,
+  userName: "",
+  nationalID: "",
+  loanBalance: 0,
+};
+
 const AppContext = createContext();
 
 function reducer(state, action) {
